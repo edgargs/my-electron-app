@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src *">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link href="index.css" rel="stylesheet" media="all" />
+  </head>
+  <body>
+    <h3>Making HTTP REST API Calls</h3>
+    
+    <table id="myTable">
+      <caption>Book list</caption>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Pages</th>
+        </tr>
+      </thead>
+      <tbody id="myData">
+      </tbody>
+    </table> 
+
+  <br><br>  
+  <button id="btnRefresh">
+      Refresh
+  </button>
+  <button id="btnAdd">
+      Add
+  </button>  
+
+    <!-- Adding Individual Renderer
+        Process JS File -->
+    <script src="index.js"></script>
+    
+  </body>
+</html>
